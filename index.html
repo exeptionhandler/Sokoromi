@@ -4,52 +4,70 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sokoromi - ¡Tu bot de Sokoban más kawaii!</title>
-    <meta name="description" content="Sokoromi es tu bot de Discord para jugar Sokoban con un estilo súper kawaii. ¡Añádelo a tu servidor y disfruta!">
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <meta name="description" content="Sokoromi es tu bot de Discord para jugar Sokoban con un estilo súper kawaii. ¡Añádelo a tu servidor y disfruta de mapas infinitos!">
+    <meta name="keywords" content="Sokoromi, Discord bot, Sokoban, kawaii, juegos, mini games, Discord">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!-- Navigation -->
-    <nav class="navbar">
+    <nav class="navbar" id="navbar">
         <div class="nav-container">
             <div class="nav-brand">
-                <span class="nav-logo">🌸 Sokoromi</span>
+                <a href="#inicio" class="nav-logo">🌸 Sokoromi</a>
             </div>
             <div class="nav-menu" id="nav-menu">
                 <a href="#inicio" class="nav-link">Inicio</a>
                 <a href="#caracteristicas" class="nav-link">Características</a>
-                <a href="#comandos" class="nav-link">Comandos</a>
+                <a href="#como-funciona" class="nav-link">Cómo Funciona</a>
                 <a href="#estadisticas" class="nav-link">Estadísticas</a>
-                <a href="https://github.com/exeptionhandler/Sokoromi" target="_blank" class="nav-link">GitHub</a>
+                <a href="#comandos" class="nav-link">Comandos</a>
+                <a href="https://github.com/exeptionhandler/Sokoromi" target="_blank" rel="noopener noreferrer" class="nav-link nav-link--external">
+                    <span>GitHub</span>
+                    <span class="external-icon">↗</span>
+                </a>
             </div>
-            <div class="nav-toggle" id="nav-toggle">
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
                 <span class="nav-toggle-bar"></span>
                 <span class="nav-toggle-bar"></span>
                 <span class="nav-toggle-bar"></span>
-            </div>
+            </button>
         </div>
     </nav>
 
     <!-- Hero Section -->
     <section id="inicio" class="hero">
-        <div class="hero-container">
+        <div class="hero-background">
+            <div class="kawaii-float kawaii-float-1">✨</div>
+            <div class="kawaii-float kawaii-float-2">🌸</div>
+            <div class="kawaii-float kawaii-float-3">💖</div>
+            <div class="kawaii-float kawaii-float-4">🎮</div>
+            <div class="kawaii-float kawaii-float-5">📦</div>
+            <div class="kawaii-float kawaii-float-6">🌺</div>
+        </div>
+        <div class="hero-container container">
             <div class="hero-content">
                 <div class="hero-decoration">✨ 📦 ✨</div>
                 <h1 class="hero-title">
                     <span class="hero-title-main">Sokoromi</span>
                     <span class="hero-title-sub">¡Tu bot de Sokoban más kawaii!</span>
+                    <span class="hero-title-emoji">(◡ ‿ ◡)</span>
                 </h1>
                 <p class="hero-description">
-                    ¡Hola hola! (◡ ‿ ◡) Soy Sokoromi y estoy aquí para traerte diversión infinita con mapas aleatorios de Sokoban, estadísticas detalladas y una experiencia súper kawaii en Discord.
+                    ¡Hola hola! Soy Sokoromi y estoy aquí para traerte diversión infinita con mapas aleatorios de Sokoban, estadísticas detalladas y una experiencia súper kawaii en Discord.
                 </p>
                 <div class="hero-buttons">
-                    <a href="https://discord.com/oauth2/authorize?client_id=1419121189611372574&permissions=2147483647&scope=bot" target="_blank" class="btn btn--primary btn--lg">
+                    <a href="https://discord.com/oauth2/authorize?client_id=1419121189611372574&permissions=2147483647&scope=bot" 
+                       target="_blank" rel="noopener noreferrer" class="btn btn--primary btn--lg">
                         <span class="btn-icon">🚀</span>
-                        ¡Añadir a tu Servidor!
+                        <span>¡Añadir a tu Servidor!</span>
                     </a>
-                    <a href="https://top.gg/bot/1419121189611372574" target="_blank" class="btn btn--secondary btn--lg">
+                    <a href="https://top.gg/bot/1419121189611372574" 
+                       target="_blank" rel="noopener noreferrer" class="btn btn--secondary btn--lg">
                         <span class="btn-icon">⭐</span>
-                        Ver en Top.gg
+                        <span>Ver en Top.gg</span>
                     </a>
                 </div>
                 <div class="hero-decoration-bottom">🌺 🎮 🌺</div>
@@ -65,32 +83,32 @@
                 <p class="section-subtitle">Descubre todas las características kawaii que te esperan ✨</p>
             </div>
             <div class="features-grid">
-                <div class="feature-card">
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
                     <div class="feature-icon">📦</div>
                     <h3 class="feature-title">Mapas Infinitos</h3>
                     <p class="feature-description">Juega Sokoban con mapas generados aleatoriamente para diversión sin límites</p>
                 </div>
-                <div class="feature-card">
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
                     <div class="feature-icon">🎯</div>
                     <h3 class="feature-title">Estadísticas Detalladas</h3>
                     <p class="feature-description">Sistema de puntuación completo que rastrea tu progreso y logros</p>
                 </div>
-                <div class="feature-card">
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
                     <div class="feature-icon">🏅</div>
                     <h3 class="feature-title">Leaderboard Global</h3>
                     <p class="feature-description">Compite con jugadores de todo el mundo y escala posiciones</p>
                 </div>
-                <div class="feature-card">
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="400">
                     <div class="feature-icon">⚡</div>
                     <h3 class="feature-title">Controles Fáciles</h3>
                     <p class="feature-description">Usa botones interactivos o comandos de texto, ¡como prefieras!</p>
                 </div>
-                <div class="feature-card">
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="500">
                     <div class="feature-icon">🎨</div>
                     <h3 class="feature-title">Experiencia Kawaii</h3>
                     <p class="feature-description">Interfaz súper cute y personalizable que te hará sonreír</p>
                 </div>
-                <div class="feature-card">
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="600">
                     <div class="feature-icon">🌸</div>
                     <h3 class="feature-title">Siempre Actualizada</h3>
                     <p class="feature-description">Nuevas características y mejoras constantes para tu diversión</p>
@@ -100,33 +118,36 @@
     </section>
 
     <!-- How it Works Section -->
-    <section class="how-it-works">
+    <section id="como-funciona" class="how-it-works">
         <div class="container">
             <div class="section-header">
                 <h2 class="section-title">¿Cómo empezar? ¡Es súper fácil!</h2>
                 <p class="section-subtitle">En solo 3 pasitos tendrás a Sokoromi lista en tu servidor (ﾉ◕ヮ◕)ﾉ*:･ﾟ✧</p>
             </div>
             <div class="steps-container">
-                <div class="step">
+                <div class="step" data-aos="fade-right" data-aos-delay="100">
                     <div class="step-number">1</div>
                     <div class="step-content">
                         <h3 class="step-title">Añade a Sokoromi</h3>
                         <p class="step-description">Haz clic en "Añadir a tu Servidor" y selecciona tu servidor de Discord</p>
                     </div>
+                    <div class="step-icon">🎯</div>
                 </div>
-                <div class="step">
+                <div class="step" data-aos="fade-left" data-aos-delay="200">
                     <div class="step-number">2</div>
                     <div class="step-content">
                         <h3 class="step-title">Usa /info</h3>
                         <p class="step-description">Ejecuta el comando /info para conocer todas las funciones disponibles</p>
                     </div>
+                    <div class="step-icon">💡</div>
                 </div>
-                <div class="step">
+                <div class="step" data-aos="fade-right" data-aos-delay="300">
                     <div class="step-number">3</div>
                     <div class="step-content">
                         <h3 class="step-title">¡A jugar!</h3>
                         <p class="step-description">¡Disfruta de horas infinitas de diversión con Sokoban kawaii!</p>
                     </div>
+                    <div class="step-icon">🎮</div>
                 </div>
             </div>
         </div>
@@ -140,27 +161,30 @@
                 <p class="section-subtitle">¡Mira qué tan popular se está volviendo Sokoromi! ✨</p>
             </div>
             <div class="stats-container">
-                <div class="stat-card">
+                <div class="stat-card" data-aos="zoom-in" data-aos-delay="100">
                     <div class="stat-icon">🏠</div>
                     <div class="stat-number" data-target="1">0</div>
                     <div class="stat-label">Servidores</div>
                 </div>
-                <div class="stat-card">
+                <div class="stat-card" data-aos="zoom-in" data-aos-delay="200">
                     <div class="stat-icon">👥</div>
                     <div class="stat-number" data-target="50">0</div>
                     <div class="stat-label">Jugadores Activos</div>
                 </div>
-                <div class="stat-card">
+                <div class="stat-card" data-aos="zoom-in" data-aos-delay="300">
                     <div class="stat-icon">🎮</div>
-                    <div class="stat-number" data-target="200">0</div>
+                    <div class="stat-number" data-target="1000">0</div>
                     <div class="stat-label">Partidas Jugadas</div>
                 </div>
             </div>
-            <div class="widget-container">
+            <div class="widget-container" data-aos="fade-up" data-aos-delay="400">
                 <div class="widget-title">Widget Oficial de Top.gg</div>
-                <div class="topgg-widget">
-                    <a href="https://top.gg/bot/1419121189611372574" target="_blank">
-                        <img src="https://top.gg/api/widget/servers/1419121189611372574.svg" alt="Sokoromi Server Count">
+                <div class="topgg-widget" id="topgg-widget">
+                    <a href="https://top.gg/bot/1419121189611372574" target="_blank" rel="noopener noreferrer">
+                        <img src="https://top.gg/api/widget/servers/1419121189611372574.svg" 
+                             alt="Sokoromi Server Count" 
+                             loading="lazy"
+                             onerror="this.parentElement.parentElement.innerHTML='<div class=&quot;widget-fallback&quot;><div class=&quot;widget-fallback-title&quot;>🌸 Sokoromi</div><div class=&quot;widget-fallback-servers&quot;>1 Servidor</div><a href=&quot;https://top.gg/bot/1419121189611372574&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot; class=&quot;widget-fallback-link&quot;>Ver en Top.gg →</a></div>'">
                     </a>
                 </div>
             </div>
@@ -175,14 +199,14 @@
                 <p class="section-subtitle">Todo lo que necesitas para empezar a jugar ♡(˃͈ દ ˂͈ ༶ )</p>
             </div>
             <div class="commands-grid">
-                <div class="command-card">
+                <div class="command-card" data-aos="slide-up" data-aos-delay="100">
                     <div class="command-header">
                         <span class="command-name">/info</span>
                         <span class="command-type">Slash Command</span>
                     </div>
                     <p class="command-description">Muestra información del bot y todos los comandos disponibles. ¡Tu punto de partida perfecto!</p>
                 </div>
-                <div class="command-card">
+                <div class="command-card" data-aos="slide-up" data-aos-delay="200">
                     <div class="command-header">
                         <span class="command-name">sk!</span>
                         <span class="command-type">Prefijo de Texto</span>
@@ -190,7 +214,7 @@
                     <p class="command-description">Prefijo alternativo para usar comandos de texto. ¡Perfecto si prefieres escribir!</p>
                 </div>
             </div>
-            <div class="commands-note">
+            <div class="commands-note" data-aos="fade-up" data-aos-delay="300">
                 <div class="note-icon">💡</div>
                 <p>¡Consejo kawaii! Usa <code>/info</code> después de añadir a Sokoromi para descubrir todos los comandos de juego disponibles.</p>
             </div>
@@ -203,14 +227,27 @@
             <div class="footer-content">
                 <div class="footer-section">
                     <h3 class="footer-title">🌸 Sokoromi</h3>
-                    <p class="footer-description">Tu bot de Sokoban más kawaii en Discord. Diversión infinita te espera!</p>
+                    <p class="footer-description">Tu bot de Sokoban más kawaii en Discord. ¡Diversión infinita te espera!</p>
+                    <div class="footer-social">
+                        <a href="https://github.com/exeptionhandler/Sokoromi" target="_blank" rel="noopener noreferrer" class="social-link">
+                            <span class="social-icon">🐙</span>
+                            <span>GitHub</span>
+                        </a>
+                    </div>
                 </div>
                 <div class="footer-section">
                     <h4 class="footer-heading">Enlaces Útiles</h4>
                     <div class="footer-links">
-                        <a href="https://discord.com/oauth2/authorize?client_id=1419121189611372574&permissions=2147483647&scope=bot" target="_blank" class="footer-link">Añadir Bot</a>
-                        <a href="https://top.gg/bot/1419121189611372574" target="_blank" class="footer-link">Top.gg</a>
-                        <a href="https://github.com/exeptionhandler/Sokoromi" target="_blank" class="footer-link">GitHub</a>
+                        <a href="https://discord.com/oauth2/authorize?client_id=1419121189611372574&permissions=2147483647&scope=bot" 
+                           target="_blank" rel="noopener noreferrer" class="footer-link">
+                            <span>🚀 Añadir Bot</span>
+                        </a>
+                        <a href="https://top.gg/bot/1419121189611372574" target="_blank" rel="noopener noreferrer" class="footer-link">
+                            <span>⭐ Top.gg</span>
+                        </a>
+                        <a href="https://github.com/exeptionhandler/Sokoromi" target="_blank" rel="noopener noreferrer" class="footer-link">
+                            <span>📚 Documentación</span>
+                        </a>
                     </div>
                 </div>
                 <div class="footer-section">
