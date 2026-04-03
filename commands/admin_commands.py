@@ -12,7 +12,7 @@ class AdminCommands(commands.Cog):
         self.bot = bot
         self.logger = logging.getLogger(__name__)
 
-    async def validate_prefix(self, prefix: str) -> tuple[bool, str]:
+    async def validate_prefix(self, prefix: str) -> Tuple[bool, str]:
         """Validación robusta del prefijo"""
         # Limpiar espacios y verificar longitud
         cleaned_prefix = prefix.strip()
